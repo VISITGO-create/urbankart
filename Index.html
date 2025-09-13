@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN Orthopedic Car Neck Rest Pillow | Superior Neck Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff9900;
+            --secondary: #146eb4;
+            --accent: #ff3333;
+            --dark: #232f3e;
+            --light: #f2f2f2;
+            --success: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--dark);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 40px;
+        }
+        
+        .trust-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        
+        .badge {
+            background: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .badge i {
+            color: var(--success);
+        }
+        
+        /* Product Section */
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .product-images {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .image-container {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: rgbGlow 8s infinite;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes rgbGlow {
+            0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+            33% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); }
+            66% { box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+        }
+        
+        .main-image {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .thumbnail:hover, .thumbnail.active {
+            border-color: var(--primary);
+        }
+        
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-title {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .stars {
+            color: #ffc107;
+        }
+        
+        .rating-count {
+            color: #007185;
+            font-size: 13px;
+        }
+        
+        .pricing {
+            margin: 15px 0;
+        }
+        
+        .deal-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+            display: block;
+        }
+        
+        .deal-text {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .mrp {
+            font-size: 16px;
+            text-decoration: line-through;
+            color: #777;
+            margin-left: 5px;
+        }
+        
+        .discount {
+            font-size: 16px;
+            color: var(--success);
+            margin-left: 10px;
+        }
+        
+        .timer-container {
+            background: #fff4ea;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px dashed var(--primary);
+        }
+        
+        .timer-title {
+            font-size: 14px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        
+        #countdown {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .order-info {
+            display: flex;
+            gap: 12px;
+            margin: 15px 0;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .orders-count {
+            background: #f0f8ff;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+        
+        .whatsapp-info {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #25D366;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .quantity-selector {
+            margin: 15px 0;
+        }
+        
+        .quantity-title {
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .quantity-box {
+            display: inline-flex;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .qty-btn {
+            width: 35px;
+            height: 35px;
+            background: #f8f9fa;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .qty-input {
+            width: 50px;
+            height: 35px;
+            text-align: center;
+            border: none;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            font-size: 16px;
+        }
+        
+        .buy-now-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+            animation: glow 2s infinite;
+            transition: transform 0.3s;
+        }
+        
+        .buy-now-btn:hover {
+            transform: scale(1.02);
+            animation: glow 0.5s infinite;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 15px rgba(255, 153, 0, 0.5); }
+            50% { box-shadow: 0 0 25px rgba(255, 153, 0, 0.8); }
+            100% { box-shadow: 0 0 15px rgba(255, 153, 0, 0.5); }
+        }
+        
+        .trust-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .trust-item {
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: 13px;
+        }
+        
+        .trust-item i {
+            font-size: 20px;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+        
+        /* Live Orders */
+        .live-orders {
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .live-orders-title {
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .live-pulse {
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        
+        .order-notification {
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            animation: slideIn 0.5s, glowText 2s 0.5s;
+            border-left: 4px solid var(--primary);
+            font-size: 13px;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes glowText {
+            0% { box-shadow: 0 0 5px rgba(255, 153, 0, 0); }
+            50% { box-shadow: 0 0 10px rgba(255, 153, 0, 0.5); }
+            100% { box-shadow: 0 0 5px rgba(255, 153, 0, 0); }
+        }
+        
+        /* Floating Order Notifications */
+        .floating-notification {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 99;
+            animation: slideInRight 0.5s, float 3s 0.5s;
+            border-left: 4px solid var(--primary);
+            max-width: 280px;
+            display: none;
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+        
+        .notification-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .notification-text {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .notification-location {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .notification-time {
+            font-size: 11px;
+            color: #999;
+            text-align: right;
+        }
+        
+        /* Product Specs */
+        .product-specs {
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+        
+        .spec-item {
+            display: flex;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .spec-item i {
+            color: var(--secondary);
+            min-width: 16px;
+        }
+        
+        /* WhatsApp Chat */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+            
+            .trust-item {
+                min-width: calc(50% - 10px);
+            }
+            
+            .logo {
+                height: 35px;
+            }
+            
+            .badge {
+                font-size: 10px;
+                padding: 3px 6px;
+            }
+            
+            .product-title {
+                font-size: 18px;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .floating-notification {
+                right: 10px;
+                max-width: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .trust-badges {
+                display: none;
+            }
+            
+            .trust-item {
+                min-width: 100%;
+            }
+            
+            .order-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .floating-notification {
+                max-width: 200px;
+                right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <img src="https://i.ibb.co/XxZqVwkY/Screenshot-1-removebg-preview.png" alt="URBAN Logo" class="logo">
+            <div class="trust-badges">
+                <div class="badge"><i class="fas fa-truck"></i> Free Delivery</div>
+                <div class="badge"><i class="fas fa-shield-alt"></i> Secure Payment</div>
+                <div class="badge"><i class="fas fa-undo"></i> Easy Returns</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Order Notification -->
+    <div class="floating-notification" id="floatingNotification">
+        <div class="notification-content">
+            <div class="notification-text" id="notificationText">Rahul ordered 2 pieces</div>
+            <div class="notification-location" id="notificationLocation">from Maharashtra</div>
+            <div class="notification-time" id="notificationTime">just now</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="product-images">
+                <div class="image-container">
+                    <img src="https://i.ibb.co/PswVBWkD/3.png" alt="URBAN Orthopedic Car Neck Rest Pillow" class="main-image" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="https://i.ibb.co/PswVBWkD/3.png" alt="Product thumbnail" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/2YNBq9V5/2.png" alt="Product thumbnail" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/JW5SXpZ3/3.png" alt="Product thumbnail" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/xqnYxxCv/4.png" alt="Product thumbnail" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/1f5LZyMy/5.png" alt="Product thumbnail" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            
+            <div class="product-details">
+                <h1 class="product-title">URBAN Orthopedic Car Neck Rest Pillow Superior Neck Support Cushion Car Seat Headrest Cushion -Car Neck Pillow for Neck Pain Relief in Office, Driving - Black</h1>
+                
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="rating-count" id="ratingCount">4.8 (2784 reviews)</div>
+                </div>
+                
+                <div class="pricing">
+                    <span class="deal-price">DEAL PRICE: ₹999</span>
+                    <span class="deal-text">M.R.P.: <span class="mrp">₹2499</span> <span class="discount">(60% OFF)</span></span>
+                </div>
+                
+                <div class="timer-container">
+                    <div class="timer-title">Limited Time Offer! Expires in:</div>
+                    <div id="countdown">03:00</div>
+                </div>
+                
+                <div class="order-info">
+                    <div class="orders-count" id="ordersCount">102547+ orders</div>
+                    <div class="whatsapp-info">
+                        <i class="fab fa-whatsapp"></i> 8088659806
+                    </div>
+                </div>
+                
+                <div class="quantity-selector">
+                    <div class="quantity-title">Quantity:</div>
+                    <div class="quantity-box">
+                        <button class="qty-btn" onclick="decreaseQty()">-</button>
+                        <input type="number" class="qty-input" id="quantity" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty()">+</button>
+                    </div>
+                </div>
+                
+                <a href="https://gleeful-flan-ae34f8.netlify.app/" class="buy-now-btn"><span>BUY NOW</span></a>
+                
+                <div class="trust-section">
+                    <div class="trust-item">
+                        <i class="fas fa-truck"></i>
+                        <div>5-7 Days Delivery</div>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div>Cash on Delivery</div>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>1 Year Warranty</div>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-undo"></i>
+                        <div>7 Days Returns</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Live Orders -->
+        <section class="live-orders">
+            <h2 class="live-orders-title"><span class="live-pulse"></span> Live Orders Being Placed</h2>
+            <div id="liveOrdersContainer">
+                <!-- Orders will be populated by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Product Specifications -->
+        <section class="product-specs">
+            <h2>Product Details</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <i class="fas fa-tag"></i>
+                    <div><strong>Brand:</strong> URBAN</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-star"></i>
+                    <div><strong>Special Feature:</strong> Adjustable, Breathable, Lightweight, Portable, Removable Cover</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-palette"></i>
+                    <div><strong>Colour:</strong> Black</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-ruler-combined"></i>
+                    <div><strong>Size:</strong> Universal</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-cube"></i>
+                    <div><strong>Fill Material:</strong> Gel Memory Foam</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-shapes"></i>
+                    <div><strong>Shape:</strong> Wedge</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-user"></i>
+                    <div><strong>Age Range:</strong> Adult</div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-utensils"></i>
+                    <div><strong>Recommended Uses:</strong> Driving, Reading, Recovery, Resting, Sitting, Sleeping, Travelling</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Product -->
+        <section class="product-specs">
+            <h2>About this Item</h2>
+            <ul>
+                <li>X-LARGE ERGONOMIC DESIGN FOR SUPERIOR SUPPORT: Expertly crafted with a concave center (valley shape) to firmly cradle and support the natural S-shaped curve of your head, neck, and shoulder.</li>
+                <li>GENEROUS SIZE FOR UNIVERSAL FIT: Measuring 38x29.5x15cm (14.9"x11.6"x5.9"), this Large Plus model offers big support and is designed to fit most car seats, high-back office chairs with a separate headrest, and gaming chairs.</li>
+                <li>100% HIGH-QUALITY MEMORY FOAM: Made of slow-rebound memory foam that provides firm, supportable comfort without permanent deformation.</li>
+                <li>ADJUSTABLE ELASTIC STRAP FOR CUSTOM FIT: Features an elastic strap that is easily adjustable upward and downward.</li>
+                <li>UPGRADED SOFT & WASHABLE COVER: The newly designed cover is made of soft, anti-sweat fabric with excellent breathability.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <!-- WhatsApp Chat -->
+    <a href="https://wa.me/message/EZG4ZBTGIN66F1" class="whatsapp-chat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 URBAN Comfort Products. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const countdownEl = document.getElementById('countdown');
+        const ordersCountEl = document.getElementById('ordersCount');
+        const ratingCountEl = document.getElementById('ratingCount');
+        const liveOrdersContainer = document.getElementById('liveOrdersContainer');
+        const floatingNotification = document.getElementById('floatingNotification');
+        const notificationText = document.getElementById('notificationText');
+        const notificationLocation = document.getElementById('notificationLocation');
+        const notificationTime = document.getElementById('notificationTime');
+        
+        // Variables
+        let timerInterval;
+        let orderCount = 102547;
+        let reviewCount = 2784;
+        let currentTimerDuration = 180; // 3 minutes in seconds
+        let timerType = 'main'; // main, secondary, flash
+        
+        // Indian names and states for live orders
+        const indianNames = [
+            "Rahul Sharma", "Priya Patel", "Amit Kumar", "Sneha Singh", "Vikram Yadav",
+            "Anjali Gupta", "Rajesh Mishra", "Divya Reddy", "Sanjay Das", "Kavita Joshi",
+            "Arun Malhotra", "Pooja Mehta", "Manoj Choudhury", "Neha Agarwal", "Suresh Tiwari",
+            "Sunita Pandey", "Alok Saxena", "Swati Trivedi", "Nitin Bansal", "Ritu Verma",
+            "Deepak Chaturvedi", "Shilpa Iyer", "Vishal Dubey", "Anita Desai", "Harish Nair"
+        ];
+        
+        const indianStates = [
+            "Maharashtra", "Uttar Pradesh", "Karnataka", "Gujarat", "Tamil Nadu",
+            "West Bengal", "Rajasthan", "Andhra Pradesh", "Telangana", "Kerala",
+            "Madhya Pradesh", "Punjab", "Haryana", "Bihar", "Odisha",
+            "Jharkhand", "Assam", "Chhattisgarh", "Uttarakhand", "Himachal Pradesh",
+            "Goa", "Delhi", "Jammu and Kashmir", "Puducherry", "Chandigarh"
+        ];
+        
+        // Review increments pattern
+        const reviewIncrements = [2, 5, 6, 4, 1, 3, 1, 8, 9, 4, 1, 3];
+        let reviewIndex = 0;
+        
+        // Order count increments pattern
+        const orderIncrements = [14, 89, 24, 1, 5, 14, 84, 12, 58, 24, 14, 26, 41, 35, 61];
+        let orderIndex = 0;
+        
+        // Initialize the page
+        function init() {
+            startCountdown();
+            updateLiveOrders();
+            setInterval(updateReviews, 2000);
+            setInterval(updateOrderCount, 1000);
+            setInterval(addLiveOrder, 5000);
+            setInterval(showFloatingNotification, 8000);
+        }
+        
+        // Countdown Timer
+        function startCountdown() {
+            let timeLeft = currentTimerDuration;
+            
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                
+                countdownEl.innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft === 0) {
+                    // Timer completed, switch to next phase
+                    if (timerType === 'main') {
+                        currentTimerDuration = 120; // 2 minutes
+                        timerType = 'secondary';
+                        countdownEl.innerHTML = "OFFER EXTENDED! 02:00";
+                    } else if (timerType === 'secondary') {
+                        currentTimerDuration = 60; // 1 minute
+                        timerType = 'flash';
+                        countdownEl.innerHTML = "FINAL CHANCE! 01:00";
+                    } else {
+                        // Reset to main timer after flash sale
+                        currentTimerDuration = 180;
+                        timerType = 'main';
+                    }
+                    timeLeft = currentTimerDuration;
+                } else {
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+        
+        // Update Reviews
+        function updateReviews() {
+            reviewCount += reviewIncrements[reviewIndex];
+            ratingCountEl.textContent = `4.8 (${reviewCount} reviews)`;
+            reviewIndex = (reviewIndex + 1) % reviewIncrements.length;
+        }
+        
+        // Update Order Count
+        function updateOrderCount() {
+            orderCount += orderIncrements[orderIndex];
+            ordersCountEl.textContent = `${orderCount}+ orders`;
+            orderIndex = (orderIndex + 1) % orderIncrements.length;
+        }
+        
+        // Add Live Order Notification
+        function addLiveOrder() {
+            const name = indianNames[Math.floor(Math.random() * indianNames.length)];
+            const state = indianStates[Math.floor(Math.random() * indianStates.length)];
+            const quantity = Math.floor(Math.random() * 2) + 1;
+            
+            const orderEl = document.createElement('div');
+            orderEl.className = 'order-notification';
+            orderEl.innerHTML = `
+                <span>${name} ordered ${quantity} piece${quantity > 1 ? 's' : ''}</span>
+                <span>from ${state}</span>
+            `;
+            
+            liveOrdersContainer.prepend(orderEl);
+            
+            // Remove oldest order if more than 5
+            if (liveOrdersContainer.children.length > 5) {
+                liveOrdersContainer.removeChild(liveOrdersContainer.lastChild);
+            }
+        }
+        
+        // Show Floating Notification
+        function showFloatingNotification() {
+            const name = indianNames[Math.floor(Math.random() * indianNames.length)];
+            const state = indianStates[Math.floor(Math.random() * indianStates.length)];
+            const quantity = Math.floor(Math.random() * 2) + 1;
+            
+            notificationText.textContent = `${name} ordered ${quantity} piece${quantity > 1 ? 's' : ''}`;
+            notificationLocation.textContent = `from ${state}`;
+            notificationTime.textContent = 'just now';
+            
+            floatingNotification.style.display = 'block';
+            
+            // Hide after 5 seconds
+            setTimeout(() => {
+                floatingNotification.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Update Live Orders on initial load
+        function updateLiveOrders() {
+            for (let i = 0; i < 3; i++) {
+                addLiveOrder();
+            }
+        }
+        
+        // Quantity Controls
+        function increaseQty() {
+            const qtyInput = document.getElementById('quantity');
+            qtyInput.value = parseInt(qtyInput.value) + 1;
+        }
+        
+        function decreaseQty() {
+            const qtyInput = document.getElementById('quantity');
+            if (parseInt(qtyInput.value) > 1) {
+                qtyInput.value = parseInt(qtyInput.value) - 1;
+            }
+        }
+        
+        // Change Product Image
+        function changeImage(thumb) {
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            document.getElementById('mainImage').src = thumb.src;
+        }
+        
+        // Initialize the page when loaded
+        window.onload = init;
+    </script>
+</body>
+</html>
